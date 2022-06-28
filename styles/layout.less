@@ -56,6 +56,7 @@ body {
         & > .scroller {
             flex: 1;
             position: relative; // for .listing-info positioning
+            border-right: 1px solid @color-layout-border;
         }
 
         & > .header,
@@ -96,6 +97,10 @@ body {
             }
         }
 
+        & > .searchbar {
+            border-right: 1px solid @color-layout-border;
+        }
+
         & > .footer {
             border-top: 1px solid @color-layout-border;
             background-color: @color-layout-footer-background;
@@ -126,7 +131,6 @@ body {
     flex: 2;
     max-width: 30%;
     min-width: 220px;
-    border-right: 1px solid @color-layout-border;
     background-color: @color-layout-sidebar-background;
 
     &.sidebar-right {
@@ -146,7 +150,7 @@ body {
     flex: 3;
     max-width: 30%;
     min-width: 300px;
-    border-right: 1px solid @color-layout-border;
+    border-right: 0;
     background-color: @color-layout-list-background;
 }
 
