@@ -1,0 +1,66 @@
+/**
+ * Roundcube Webmail styles for the Elastic skin
+ *
+ * Copyright (c) The Roundcube Dev Team
+ *
+ * The contents are subject to the Creative Commons Attribution-ShareAlike
+ * License. It is allowed to copy, distribute, transmit and to adapt the work
+ * by keeping credits to the original authors in the README.md file.
+ * See http://creativecommons.org/licenses/by-sa/3.0/ for details.
+ */
+
+@import (reference) "variables";
+@import (reference) "mixins";
+
+/*** Fonts ***/
+
+@font-face {
+  font-family: 'Icons';
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/fa-solid-900.woff2") format('woff2'),
+       url("../fonts/fa-solid-900.woff") format('woff');
+}
+
+@font-face {
+  font-family: 'Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/fa-regular-400.woff2") format('woff2'),
+       url("../fonts/fa-regular-400.woff") format('woff');
+}
+
+@font-face {
+    font-family: Inter;
+    src: url('../fonts/Inter.ttf');
+}
+
+/* Reset some Bootstrap style */
+
+body, button, input, optgroup, select, textarea, .popover {
+    .font-family();
+}
+
+button, input, select, textarea {
+    line-height: initial;
+}
+
+input {
+    vertical-align: middle;
+}
+
+a {
+    color: @color-link;
+
+    &:hover {
+        color: @color-link-hover;
+    }
+
+    &.disabled {
+        pointer-events: none;
+    }
+
+    &.disabled:not(.btn) {
+        opacity: .5;
+    }
+}
