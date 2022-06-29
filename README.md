@@ -5,5 +5,7 @@ This is a skin for RoundCube based on the Elastic built-in skin. Code added by m
 ## Light theme
 ![Readme screenshot](./readme-screenshot.png)
 
+![Readme screenshot](./readme-screenshot-selected.png)
+
 ## Dark theme
-![Readme screenshot](./readme-screenshot-dark.png)
+![Readme screenshot](./readme-screenshot-selected-dark.png)
