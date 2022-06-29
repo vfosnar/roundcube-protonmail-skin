@@ -630,10 +630,7 @@ table.fixedcopy {
         }
     }
 
-    tr.flagged td,
-    tr.flagged td.subject span.subject a,
-    tr.flagged td.subject span.date,
-    tr.flagged td.subject span.fromto {
+    tr.flagged td.flags span.flagged {
         color: @color-list-flagged;
     }
 
@@ -741,18 +738,18 @@ table.fixedcopy {
 
     span.flagged:before {
         &:extend(.font-icon-class);
-        content: @fa-var-flag;
+        content: @fa-var-star;
     }
 
     tr.flaggedroot:not(:hover) span.unflagged:before {
         &:extend(.font-icon-class);
-        content: @fa-var-flag;
+        content: @fa-var-star;
         color: @color-list-icon;
     }
 
     tr:hover span.unflagged:before {
         &:extend(.font-icon-class);
-        .font-icon-regular(@fa-var-flag);
+        .font-icon-regular(@fa-var-star);
     }
 
     span.size {
